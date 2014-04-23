@@ -1,12 +1,5 @@
 'use strict';
-// var TripUpdate = $resource('/trips/:tripId/update', {tripId:'@id'});
-// angular.module('app', ['ngResource']).provider('Trip', function () {
-//   this.$get = ['$resource', function ($resource) {
-//     var Trip = $resource('http://127.0.0.1:3000/trips/:tripId/update', {tripId:'@id'});
-//     return Trip;
-//   }];
-//
-// });
+
 angular.module('app')
   .provider('Trip', function () {
     this.$get = ['$resource', function ($resource) {
