@@ -2,29 +2,18 @@
 
 angular.module('beatforspeedMobileApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-    console.log('doing something');
+    $scope.speed = null;
 
-    // onSuccess Callback
-    // This method accepts a Position object, which contains the
-    // current GPS coordinates
-    //
-    function onSuccess(position) {
-      var element = document.getElementById('geolocation');
-      console.log(position);
-      element.innerHTML = 'SPEEED: '  + position.coords.speed;
-    }
+    this.geoSuccess = function(position) {
+      var speed = position.coords.speed || (Math.random() * 10);
+      $scope.speed = speed;
+      $scope.$apply();
+    };
 
-    // onError Callback receives a PositionError object
-    //
-    function onError(error) {
+    this.geoError = function(error) {
       alert('code: '    + error.code    + '\n' +
             'message: ' + error.message + '\n');
-    }
+    };
 
-    navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+    navigator.geolocation.watchPosition(this.geoSuccess, this.geoError, { timeout: 30000 });
   });
