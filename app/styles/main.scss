@@ -1,6 +1,6 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+// @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
@@ -17,6 +17,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background: #D8D8D8;
+    font-family: 'Avenir Next';
+    color: #000;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -70,6 +73,12 @@ body {
 .marketing p + h4 {
     margin-top: 28px;
 }
+
+.stats { text-align: center; }
+    h1 { 
+        font-size: 52px;
+        font-weight: 600; }
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
