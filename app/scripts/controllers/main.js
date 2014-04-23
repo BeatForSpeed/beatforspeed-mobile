@@ -24,13 +24,9 @@ angular.module('app')
     $scope.tripToken = null;
     $scope.songPlaying = null;
 
-    var geoSuccess = function(position) {
-      sendSpeedToServer(position);
-    };
-
     var geoError = function(error) {
-      alert('code: '    + error.code    + '\n' +
-            'message: ' + error.message + '\n');
+      console.error('code: '    + error.code    + '\n' +
+                    'message: ' + error.message + '\n');
     };
 
     var getTripId = function (callback) {
@@ -50,6 +46,6 @@ angular.module('app')
     };
 
     getTripId(function() {
-      navigator.geolocation.watchPosition(geoSuccess, geoError, { timeout: 30000 });
+      navigator.geolocation.watchPosition(sendSpeedToServer, geoError, { timeout: 30000 });
     });
   });
