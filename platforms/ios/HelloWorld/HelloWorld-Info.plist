@@ -79,5 +79,18 @@
     </array>
     <key>CFBundleShortVersionString</key>
     <string>1.0.0</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLName</key>
+        <string>Spotify Auth</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>spotify-ios-sdk-beta</string>
+        </array>
+      </dict>
+    </array>
   </dict>
 </plist>
