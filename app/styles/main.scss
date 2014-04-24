@@ -114,8 +114,40 @@ img.play {
 .speed { float: left; }
 .beat { float: right; }
 
-.playlist { position: relative; }
+.playlist { 
+    position: relative; 
+    display: inline;
+}
 
+.playlist h3 {
+    font-size: 16px;
+}
+.playlist h1 { 
+    font-size: 18px; 
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.track { display: inline; }
+
+.btn { 
+    width: 100%; 
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 14px 0 14px 0;
+    border-radius: 6px;
+}
+
+.btn-save { 
+    background: #000;
+    color: #d8d8d8;
+}
+
+.btn-share {
+    border: 3px solid #979797;
+    background: #d8d8d8;
+    color: #000;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
