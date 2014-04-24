@@ -22,62 +22,99 @@ body {
     color: #000;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-}
-
-.marketing p + h4 {
-    margin-top: 28px;
+h1 { 
+    font-weight: 600; 
+    font-size: 42px;
 }
 
 .stats { text-align: center; }
+.stat h1 { margin-bottom: 0; }
+
+
+
+.kmh { float: left; }
+.bpm { float: right; }
+
+.track-info { 
+    text-align: center; 
+    position: relative;
+    margin-top: 140px; 
+
     h1 { 
-        font-size: 52px;
-        font-weight: 600; }
+        font-size: 26px;
+    }
+    h2 { 
+        font-size: 16px;
+        font-weight: 400;
+    }    
+}
+
+.controls { 
+    text-align: center; 
+    margin-top: 100px; 
+}
+ 
+img.previous { 
+    float: left; 
+    width: 12%; 
+}
+
+img.next { 
+    float: right; 
+    width: 12%;
+}
+
+img.play {
+    width: 35%;
+    margin-top: -35px;
+}
+
+.navbar { font-family: "Helvetica Neue" }
+
+.navbar img { 
+    display: inline-block; 
+    width: 25%;
+ }
+
+.back-button { display: inline-block; }
+
+.navbar { 
+    display: block;
+    border-bottom: 1px solid #B1B1B1;
+    margin-bottom: 0;
+    min-height: 45px;
+
+ }
+
+.navbar h1 { 
+    display: inline; 
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar p { 
+    display: inline; 
+    font-size: 18px;
+}
+
+.end-stats .stat { text-align: center; 
+    h3 { 
+        font-size: 15px;
+        font-weight: 400;
+    }    
+}
+
+.speed { float: left; }
+.beat { float: right; }
+
+.playlist { position: relative; }
 
 
 /* Responsive: Portrait tablets and up */

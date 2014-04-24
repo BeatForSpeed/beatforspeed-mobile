@@ -8,14 +8,22 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/main', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        // controller: 'MainCtrl'
       })
-      .when('/player', {
+      .when('/', {
         templateUrl: 'views/player.html',
         controller: 'MainCtrl'
-      })      
+<<<<<<< HEAD
+      })    
+      .when('/playlist', {
+        templateUrl: 'views/playlist.html',
+        controller: 'MainCtrl'
+      })    
+=======
+      })
+>>>>>>> FETCH_HEAD
       .otherwise({
         redirectTo: '/'
       });
