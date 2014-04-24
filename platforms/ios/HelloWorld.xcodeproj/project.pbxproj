@@ -39,6 +39,10 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		C2B6432955AC46CFBE4B5809 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 50645326EB39496E86943227 /* CDVLocation.m */; };
+		4C17D08928D543D3BC8179D5 /* CDVSpotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 914FE24F497643EEA1A4BB5C /* CDVSpotify.m */; };
+		FC1D8E040B0C4D5686ED714A /* AppDelegate+spotify.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF2928BCCAD4AC1BE099EF4 /* AppDelegate+spotify.m */; };
+		DA8C9FC4A3EC4692A8912BC2 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C34D2AD84B514F8B963BBF68 /* Spotify.framework */; };
+		C1AA3B05955C4038951EE1E0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C173AE1EE7440EE854E1B5B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,12 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "HelloWorld/config.xml"; sourceTree = "<group>"; };
 		50645326EB39496E86943227 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		5F4248168C174BBAB95DE615 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		914FE24F497643EEA1A4BB5C /* CDVSpotify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSpotify.m"; path = "com.beatforspeed.spotify/CDVSpotify.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		3EF2928BCCAD4AC1BE099EF4 /* AppDelegate+spotify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+spotify.m"; path = "com.beatforspeed.spotify/AppDelegate+spotify.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		6C30FDF5E6EB41B8986D7937 /* CDVSpotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSpotify.h"; path = "com.beatforspeed.spotify/CDVSpotify.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C34DE32FCFCE4A8B8F1C99E2 /* AppDelegate+spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+spotify.h"; path = "com.beatforspeed.spotify/AppDelegate+spotify.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C34D2AD84B514F8B963BBF68 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Spotify.framework"; path = "HelloWorld/Plugins/com.beatforspeed.spotify/Spotify.framework"; sourceTree = "<group>"; };
+		6C173AE1EE7440EE854E1B5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +127,8 @@
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */,
+				DA8C9FC4A3EC4692A8912BC2 /* Spotify.framework in Frameworks */,
+				C1AA3B05955C4038951EE1E0 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +222,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				C34D2AD84B514F8B963BBF68 /* Spotify.framework */,
+				6C173AE1EE7440EE854E1B5B /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +241,10 @@
 			children = (
 				50645326EB39496E86943227 /* CDVLocation.m */,
 				5F4248168C174BBAB95DE615 /* CDVLocation.h */,
+				914FE24F497643EEA1A4BB5C /* CDVSpotify.m */,
+				3EF2928BCCAD4AC1BE099EF4 /* AppDelegate+spotify.m */,
+				6C30FDF5E6EB41B8986D7937 /* CDVSpotify.h */,
+				C34DE32FCFCE4A8B8F1C99E2 /* AppDelegate+spotify.h */,
 			);
 			name = Plugins;
 			path = "HelloWorld/Plugins";
@@ -422,6 +440,8 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				C2B6432955AC46CFBE4B5809 /* CDVLocation.m in Sources */,
+				4C17D08928D543D3BC8179D5 /* CDVSpotify.m in Sources */,
+				FC1D8E040B0C4D5686ED714A /* AppDelegate+spotify.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +521,10 @@
 				);
 				PRODUCT_NAME = "HelloWorld";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloWorld/Plugins/com.beatforspeed.spotify\"",
+				);
 			};
 			name = Debug;
 		};
@@ -532,6 +556,10 @@
 				);
 				PRODUCT_NAME = "HelloWorld";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloWorld/Plugins/com.beatforspeed.spotify\"",
+				);
 			};
 			name = Release;
 		};

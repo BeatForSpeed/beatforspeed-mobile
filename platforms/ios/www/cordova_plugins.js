@@ -27,12 +27,20 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/com.beatforspeed.spotify/www/spotify.js",
+        "id": "com.beatforspeed.spotify.spotify",
+        "clobbers": [
+            "spotify"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.geolocation": "0.3.6"
+    "org.apache.cordova.geolocation": "0.3.6",
+    "com.beatforspeed.spotify": "0.0.1"
 }
 // BOTTOM OF METADATA
 });

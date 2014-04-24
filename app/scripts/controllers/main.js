@@ -16,6 +16,14 @@ angular.module('app')
     window.Trip = Trip;
     $scope.tripToken = null;
     $scope.songPlaying = null;
+    $scope.spotifyLogin = function () {
+      spotify.login(function() {
+        alert('success');
+      }, function() {
+        alert('error')
+      });
+
+    };
 
     var geoError = function(error) {
       console.error('code: '    + error.code    + '\n' +
