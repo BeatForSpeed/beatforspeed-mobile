@@ -17,11 +17,13 @@ angular.module('app')
     $scope.tripToken = null;
     $scope.songPlaying = null;
     $scope.spotifyLogin = function () {
-      spotify.login(function() {
-        alert('success');
-      }, function() {
-        alert('error')
-      });
+      alert('working...');
+      alert(typeof window.spotify);
+      // spotify.login(function() {
+      //   alert('success');
+      // }, function() {
+      //   alert('error')
+      // });
 
     };
 

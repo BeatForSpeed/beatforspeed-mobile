@@ -10,7 +10,11 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        // controller: 'MainCtrl'
+        controller: 'MainCtrl'
+      })
+      .when('/auth', {
+        templateUrl: 'views/auth.html',
+        controller: 'AuthCtrl'
       })
       .when('/player', {
         templateUrl: 'views/player.html',

@@ -1,4 +1,4 @@
-<div ng-controller="MainCtrl">
+<div ng-controller="AuthCtrl">
   <div class="content">
   	<div class="container">
   		<div class="col-sm-12">
@@ -7,13 +7,5 @@
   		<button type="submit" class="btn btn-default" ng-click="spotifyLogin()">Sign in with Spotify</button>
   		<button type="submit" class="btn btn-default">Sign in with Deezer</button>
   	</div>
-  </div>
-
-  <div class="jumbotron">
-    <p><a id='geolocation' class='btn btn-success' ng-click='speedChange()'>SPEED: {{ trip.speed }}</a></p>
-    <p ng-click="spotifyLogin()">Song playing {{ trip.songID }}</p>
-
-  <div class="footer">
-    <p><span class="glyphicon glyphicon-heart"></span> from the BumpNasty team</p>
   </div>
 </div>
