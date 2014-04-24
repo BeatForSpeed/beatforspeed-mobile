@@ -15,15 +15,11 @@ angular
       .when('/', {
         templateUrl: 'views/player.html',
         controller: 'MainCtrl'
-<<<<<<< HEAD
       })    
       .when('/playlist', {
         templateUrl: 'views/playlist.html',
         controller: 'MainCtrl'
       })    
-=======
-      })
->>>>>>> FETCH_HEAD
       .otherwise({
         redirectTo: '/'
       });
